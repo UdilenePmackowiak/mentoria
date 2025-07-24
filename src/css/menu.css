@@ -1,0 +1,45 @@
+.header {
+    height: 100vh; /* ou uma altura fixa, como 600px */
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    
+  }
+@media (max-width:900px){
+    .header .menu{
+        display: block;
+       
+    }
+    .header nav ul{
+        display: none;
+    }
+    .header input:checked ~ ul{
+        display: block;
+    }
+    .header nav{
+        position: absolute;
+        top: 8px;
+        right: 0;
+        z-index: 1;
+        background-color: #fff;
+    }
+    .header ul{
+        box-shadow: -3px 7px 5px 1px rgba(0,0,0,0.034);
+    }
+    .header ul li {
+        display: block;
+        text-align: center;
+        width: 180px;
+        padding: 20px;
+    }
+    .header .links a{
+        margin-left: 0px;
+    }
+    .header label{
+        display: flex;
+        flex-direction: column;
+    }
+    .header label div{
+        align-self: flex-end;
+    }
+}
